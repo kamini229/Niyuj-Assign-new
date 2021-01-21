@@ -1,0 +1,6 @@
+{
+  "testcases/home_test.py::TestProductDetailsPage": true, 
+  "testcases/product_details_test.py::TestProductDetailsPage": true, 
+  "testcases/product_details_test.py::TestProductDetailsPage::()::test_product_price": true, 
+  "testcases/product_details_test.py::TestProductDetailsPage::()::test_product_title": true
+}
