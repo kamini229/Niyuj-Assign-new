@@ -3,6 +3,10 @@ from selenium import webdriver
 import time
 import unittest
 
+import sys
+import os
+#sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
+
 from POMProject.pages.loginPage import LoginPage
 from POMProject.pages.homePage import HomePage
 
@@ -10,7 +14,7 @@ class LoginTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome(executable_path="/home/kamini/Documents/Niyuj-assignment/drivers/chromedriver_linux64/chromedriver")
+        cls.driver = webdriver.Chrome(executable_path ="/home/kamini/Desktop/Niyuj-Assign-new/drivers/chromedriver_linux64/chromedriver")
 
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
@@ -45,7 +49,7 @@ class LoginTest(unittest.TestCase):
         print("Test completed")
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='/home/kamini/Documents/Niyuj-assignment/POMProject/reports'))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='/home/kamini/Desktop/Niyuj-Assign-new/POMProject/reports/'))
 
 
 
