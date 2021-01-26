@@ -5,7 +5,7 @@ import unittest
 
 import sys
 import os
-#sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(os.path.join(os.path.dirname(__file__), "...", "..."))
 
 from POMProject.pages.loginPage import LoginPage
 from POMProject.pages.homePage import HomePage
@@ -48,8 +48,8 @@ class LoginTest(unittest.TestCase):
         cls.driver.quit()
         print("Test completed")
 
-if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='/home/kamini/Desktop/Niyuj-Assign-new/POMProject/reports/'))
-
+if __name__ == "__main__":
+    unittest.main(
+        testRunner=HtmlTestRunner.HTMLTestRunner(output='/home/kamini/Desktop/Niyuj-Assign-new/POMProject/reports/'))
 
 
