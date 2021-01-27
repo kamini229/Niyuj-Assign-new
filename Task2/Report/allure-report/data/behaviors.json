@@ -1,0 +1,70 @@
+{
+  "features" : [ {
+    "title" : "Without feature",
+    "statistic" : {
+      "total" : 4,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 2,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "284d17081bf23b21",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 4,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 2,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "18714319b758264c",
+        "name" : "home_test.TestProductDetailsPage.test_website_title",
+        "title" : "Test website title",
+        "time" : {
+          "start" : 1611738132334,
+          "stop" : 1611738138201,
+          "duration" : 5867
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "94386c7bd9399e7d",
+        "name" : "home_test.TestProductDetailsPage.test_search_functionality",
+        "title" : "Test search functionality",
+        "time" : {
+          "start" : 1611738138458,
+          "stop" : 1611738140592,
+          "duration" : 2134
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "dfd932156896a7d6",
+        "name" : "product_details_test.TestProductDetailsPage.test_product_title",
+        "title" : "Test product title",
+        "time" : {
+          "start" : 1611738140925,
+          "stop" : 1611738156651,
+          "duration" : 15726
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "34db2d0ae01fd13b",
+        "name" : "product_details_test.TestProductDetailsPage.test_product_price",
+        "title" : "Test product price",
+        "time" : {
+          "start" : 1611738156796,
+          "stop" : 1611738167629,
+          "duration" : 10833
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

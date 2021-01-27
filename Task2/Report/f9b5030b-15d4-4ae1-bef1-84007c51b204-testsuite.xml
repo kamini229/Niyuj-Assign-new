@@ -1,0 +1,133 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1611738132334" stop="1611738167629">
+  <name>testcases</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1611738132334" status="passed" stop="1611738138201">
+      <name>home_test.TestProductDetailsPage.test_website_title</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21006-MainThread"/>
+        <label name="host" value="NIYUJ-KAMINI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1611738138458" status="passed" stop="1611738140592">
+      <name>home_test.TestProductDetailsPage.test_search_functionality</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21006-MainThread"/>
+        <label name="host" value="NIYUJ-KAMINI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1611738140925" status="failed" stop="1611738156651">
+      <name>product_details_test.TestProductDetailsPage.test_product_title</name>
+      <failure>
+        <message>AssertionError: assert 'New Apple Ma...Latest Model)' == 'Macbook pro'
+  - Macbook pro
+  + New Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD) - Silver (Latest Model)</message>
+        <stack-trace>self = &lt;testcases.product_details_test.TestProductDetailsPage object at 0x7f70d74d5470&gt;, setUp = None
+
+    def test_product_title(self, setUp):
+        home_object = Home(self.driver)
+        home_object.enterTextIntoSearchBox("Macbook pro")
+        home_object.clickSearchIcon()
+        time.sleep(5)
+        parent_window = self.driver.current_window_handle
+        print(parent_window)
+    
+        product_page = Products(self.driver)
+        product_page.clickFirstSearchedProduct()
+    
+        time.sleep(3)
+        windows_set = self.driver.window_handles
+        print(windows_set)
+    
+        for window in windows_set:
+            if (window != parent_window):
+                self.driver.switch_to.window(window)
+                self.driver.save_screenshot(
+                    "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+                    str(random.random() * 10000).split('.')[0] + ".png")
+    
+        product_detail_object = ProductDetails(self.driver)
+&gt;       assert product_detail_object.getProductTitle() == "Macbook pro"
+E       AssertionError: assert 'New Apple Ma...Latest Model)' == 'Macbook pro'
+E         - Macbook pro
+E         + New Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD) - Silver (Latest Model)
+
+testcases/product_details_test.py:48: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="4702da3a-3969-4c12-8189-dc009eb01701-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21006-MainThread"/>
+        <label name="host" value="NIYUJ-KAMINI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1611738156796" status="failed" stop="1611738167629">
+      <name>product_details_test.TestProductDetailsPage.test_product_price</name>
+      <failure>
+        <message>AssertionError: assert '₹ 10,799.00' == '1,27,990.00'
+  - 1,27,990.00
+  + ₹ 10,799.00</message>
+        <stack-trace>self = &lt;testcases.product_details_test.TestProductDetailsPage object at 0x7f70d9b50320&gt;, setUp = None
+
+    def test_product_price(self, setUp):
+        home_object = Home(self.driver)
+        home_object.enterTextIntoSearchBox("Macbook pro")
+        home_object.clickSearchIcon()
+        time.sleep(5)
+    
+        parent_window = self.driver.current_window_handle
+        print(parent_window)
+    
+        product_page = Products(self.driver)
+        product_page.clickFirstSearchedProduct()
+    
+        time.sleep(3)
+        windows_set = self.driver.window_handles
+        print(windows_set)
+    
+        for window in windows_set:
+            if (window != parent_window):
+                self.driver.switch_to.window(window)
+                self.driver.save_screenshot(
+                    "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+                    str(random.random() * 10000).split('.')[0] + ".png")
+    
+        product_detail_object = ProductDetails(self.driver)
+        product_price = product_detail_object.getProductPrice()
+    
+&gt;       assert product_price == "1,27,990.00"
+E       AssertionError: assert '₹ 10,799.00' == '1,27,990.00'
+E         - 1,27,990.00
+E         + ₹ 10,799.00
+
+testcases/product_details_test.py:76: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="ce216b97-a194-4b7e-b4db-74b317678177-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21006-MainThread"/>
+        <label name="host" value="NIYUJ-KAMINI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

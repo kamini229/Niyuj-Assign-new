@@ -1,0 +1,64 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 4,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 2,
+        "broken" : 0
+      },
+      "time" : {
+        "start" : 1611738132334,
+        "stop" : 1611738167629,
+        "duration" : 35295
+      }
+    },
+    "defects" : {
+      "totalCount" : 2,
+      "items" : [ {
+        "count" : 1,
+        "uid" : "b98bb37b0eaefc64",
+        "message" : "AssertionError: assert 'New Apple Ma...Latest Model)' == 'Macbook pro'\n  - Macbook pro\n  + New Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD) - Silver (Latest Model)",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "7d8647955ce0475c",
+        "message" : "AssertionError: assert '₹ 10,799.00' == '1,27,990.00'\n  - 1,27,990.00\n  + ₹ 10,799.00",
+        "status" : "FAILED"
+      } ]
+    },
+    "xunit" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "uid" : "b49ac06e19fbcc78",
+        "title" : "Testcases",
+        "statistic" : {
+          "total" : 4,
+          "passed" : 2,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 2,
+          "broken" : 0
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Without feature",
+        "statistic" : {
+          "total" : 4,
+          "passed" : 2,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 2,
+          "broken" : 0
+        }
+      } ]
+    },
+    "environment" : [ ]
+  }
+}

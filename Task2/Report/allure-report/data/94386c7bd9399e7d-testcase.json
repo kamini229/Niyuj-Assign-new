@@ -1,0 +1,50 @@
+{
+  "uid" : "94386c7bd9399e7d",
+  "name" : "home_test.TestProductDetailsPage.test_search_functionality",
+  "title" : "Test search functionality",
+  "time" : {
+    "start" : 1611738138458,
+    "stop" : 1611738140592,
+    "duration" : 2134
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "b49ac06e19fbcc78",
+    "name" : "testcases",
+    "title" : "Testcases"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "NIYUJ-KAMINI"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite-name",
+    "value" : "testcases"
+  }, {
+    "name" : "thread",
+    "value" : "21006-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

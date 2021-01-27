@@ -1,0 +1,59 @@
+{
+  "uid" : "34db2d0ae01fd13b",
+  "name" : "product_details_test.TestProductDetailsPage.test_product_price",
+  "title" : "Test product price",
+  "time" : {
+    "start" : 1611738156796,
+    "stop" : 1611738167629,
+    "duration" : 10833
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert '₹ 10,799.00' == '1,27,990.00'\n  - 1,27,990.00\n  + ₹ 10,799.00",
+    "stackTrace" : "self = <testcases.product_details_test.TestProductDetailsPage object at 0x7f70d9b50320>, setUp = None\n\n    def test_product_price(self, setUp):\n        home_object = Home(self.driver)\n        home_object.enterTextIntoSearchBox(\"Macbook pro\")\n        home_object.clickSearchIcon()\n        time.sleep(5)\n    \n        parent_window = self.driver.current_window_handle\n        print(parent_window)\n    \n        product_page = Products(self.driver)\n        product_page.clickFirstSearchedProduct()\n    \n        time.sleep(3)\n        windows_set = self.driver.window_handles\n        print(windows_set)\n    \n        for window in windows_set:\n            if (window != parent_window):\n                self.driver.switch_to.window(window)\n                self.driver.save_screenshot(\n                    \"/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/\" +\n                    str(random.random() * 10000).split('.')[0] + \".png\")\n    \n        product_detail_object = ProductDetails(self.driver)\n        product_price = product_detail_object.getProductPrice()\n    \n>       assert product_price == \"1,27,990.00\"\nE       AssertionError: assert '₹ 10,799.00' == '1,27,990.00'\nE         - 1,27,990.00\nE         + ₹ 10,799.00\n\ntestcases/product_details_test.py:76: AssertionError"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "suite" : {
+    "uid" : "b49ac06e19fbcc78",
+    "name" : "testcases",
+    "title" : "Testcases"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured stdout call",
+    "source" : "ce216b97-a194-4b7e-b4db-74b317678177-attachment.txt",
+    "type" : "text/plain",
+    "size" : 178,
+    "uid" : "10515fe1f4ba4df0"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "NIYUJ-KAMINI"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite-name",
+    "value" : "testcases"
+  }, {
+    "name" : "thread",
+    "value" : "21006-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

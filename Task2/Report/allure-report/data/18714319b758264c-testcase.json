@@ -1,0 +1,50 @@
+{
+  "uid" : "18714319b758264c",
+  "name" : "home_test.TestProductDetailsPage.test_website_title",
+  "title" : "Test website title",
+  "time" : {
+    "start" : 1611738132334,
+    "stop" : 1611738138201,
+    "duration" : 5867
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "b49ac06e19fbcc78",
+    "name" : "testcases",
+    "title" : "Testcases"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "NIYUJ-KAMINI"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite-name",
+    "value" : "testcases"
+  }, {
+    "name" : "thread",
+    "value" : "21006-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}
