@@ -2,9 +2,9 @@ from selenium.webdriver.support.select import Select
 from selenium import webdriver
 import pytest
 import time
-from TestData.HomePageData import HomePageData
-from pageObjects.HomePage import HomePage
-from utilities.BaseClass import BaseClass
+from Task3.TestData.HomePageData import HomePageData
+from Task3.pageObjects.HomePage import HomePage
+from Task3.utilities.BaseClass import BaseClass
 
 
 class TestHomePage(BaseClass):

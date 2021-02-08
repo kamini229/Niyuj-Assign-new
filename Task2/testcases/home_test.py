@@ -9,8 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from pages.homepage import Home
-from pages.productspage import Products
+from Task2.pages.homepage import Home
+from Task2.pages.productspage import Products
 import logging
 
 @pytest.mark.usefixtures("OneTimeSetUp")
@@ -35,12 +35,12 @@ class TestProductDetailsPage:
     def setUp(self):
         logging.debug("Taking screenshot before test execution...")
         self.driver.save_screenshot(
-            "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+            "/home/kamini/Desktop/Niyuj-Assign-new/Task2/screenshots" +
             str(time.time()).split('.')[0] + ".png")
         yield
         logging.info("Taking screenshot after test execution...")
         self.driver.save_screenshot(
-            "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+            "/home/kamini/Desktop/Niyuj-Assign-new/Task2/screenshots" +
             str(time.time()).split('.')[0] + ".png")
 
     def test_website_title(self, setUp):

@@ -4,9 +4,9 @@ from selenium import webdriver
 import pytest
 import time
 
-from pages.homepage import Home
-from pages.productdetailspage import ProductDetails
-from pages.productspage import Products
+from Task2.pages.homepage import Home
+from Task2.pages.productdetailspage import ProductDetails
+from Task2.pages.productspage import Products
 
 
 @pytest.mark.usefixtures("OneTimeSetUp")
@@ -15,11 +15,11 @@ class TestProductDetailsPage:
     @pytest.fixture
     def setUp(self):
         self.driver.save_screenshot(
-            "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+            "/home/kamini/Desktop/Niyuj-Assign-new/Task2/screenshots/" +
             str(random.random() * 10000).split('.')[0] + ".png")
         yield
         self.driver.save_screenshot(
-            "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+            "/home/kamini/Desktop/Niyuj-Assign-new/Task2/screenshots/" +
             str(random.random() * 10000).split('.')[0] + ".png")
 
     def test_product_title(self, setUp):
@@ -41,7 +41,7 @@ class TestProductDetailsPage:
             if (window != parent_window):
                 self.driver.switch_to.window(window)
                 self.driver.save_screenshot(
-                    "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+                    "/home/kamini/Desktop/Niyuj-Assign-new/Task2/screenshots/" +
                     str(random.random() * 10000).split('.')[0] + ".png")
 
         product_detail_object = ProductDetails(self.driver)
@@ -67,7 +67,7 @@ class TestProductDetailsPage:
             if (window != parent_window):
                 self.driver.switch_to.window(window)
                 self.driver.save_screenshot(
-                    "/home/kamini/Documents/Niyuj-assignment/Task2/screenshots/" +
+                    "/home/kamini/Desktop/Niyuj-Assign-new/Task2/screenshots/" +
                     str(random.random() * 10000).split('.')[0] + ".png")
 
         product_detail_object = ProductDetails(self.driver)

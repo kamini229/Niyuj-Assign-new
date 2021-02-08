@@ -8,7 +8,7 @@ import logging
 def OneTimeSetUp(request):
     logging.debug("Intializing the chrome driver....")
     driver = webdriver.Chrome(
-        "/home/kamini/Documents/Niyuj-assignment/drivers/chromedriver_linux64/chromedriver")
+        "/home/kamini/Desktop/Niyuj-Assign-new/drivers/chromedriver_linux64/chromedriver")
     logging.debug("Launcing the amazon website....")
     driver.get("https://www.amazon.in")
     logging.debug("Maximizing the browser window....")
@@ -27,7 +27,7 @@ def OneTimeSetUp(request):
 @pytest.fixture(scope="class")
 def SetUp(request):
     driver = webdriver.Chrome(
-        "/home/kamini/Documents/Niyuj-assignment/drivers/chromedriver_linux64/chromedriver")
+        "/home/kamini/Desktop/Niyuj-Assign-new/drivers/chromedriver_linux64/chromedriver")
     driver.get("https://www.amazon.in")
     driver.maximize_window()
     time.sleep(4)
