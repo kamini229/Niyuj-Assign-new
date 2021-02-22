@@ -1,0 +1,6 @@
+title,description,markers
+test_foo.py::test_perform,This is a perform method with regression marker,regression
+test_foo.py::test_high,This is a high method with sanity marker,sanity
+test_foo.py::test_sm,This is a sm method with smoke marker,smoke
+test_foo.py::TestCsvFile::test_func1,This is a func1 with smoke and regression marker,"regression,smoke"
+test_foo.py::TestCsvFile::test_func2,This is a func2 with sanity marker,sanity
